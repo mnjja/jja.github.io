@@ -70,6 +70,20 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Home section styles */
+#home {
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
 .profile-picture {
     width: 150px;
     height: 150px;
