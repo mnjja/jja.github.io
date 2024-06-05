@@ -1,5 +1,6 @@
+// scripts/main.js
 document.addEventListener('DOMContentLoaded', function () {
-    const tabs = document.querySelectorAll('nav ul li a');
+    const tabs = document.querySelectorAll('.nav-links a');
     const sections = document.querySelectorAll('main section');
 
     tabs.forEach(tab => {
@@ -11,9 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 section.style.display = 'none';
             });
             document.getElementById(targetId).style.display = 'block';
+
+            // Smooth scroll to the section
+            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
         });
     });
 
-    // Show the about section by default
-    document.getElementById('about').style.display = 'block';
+    // Show the home section by default
+    document.getElementById('home').style.display = 'block';
 });
